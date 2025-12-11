@@ -19,13 +19,13 @@ A Model Context Protocol (MCP) server that provides access to PubMed's vast data
 ### From NPM
 
 ```bash
-npm install -g @uh-joan/pubmed-mcp-server
+npm install -g @openpharma-org/pubmed-mcp
 ```
 
 ### From Source
 
 ```bash
-git clone https://github.com/uh-joan/pubmed-mcp-server.git
+git clone https://github.com/openpharma-org/pubmed-mcp.git
 cd pubmed-mcp-server
 npm install
 ```
@@ -41,7 +41,7 @@ Add this server to your Claude Desktop configuration:
   "mcpServers": {
     "pubmed": {
       "command": "npx",
-      "args": ["@uh-joan/pubmed-mcp-server"]
+      "args": ["@openpharma-org/pubmed-mcp"]
     }
   }
 }
@@ -52,7 +52,7 @@ Add this server to your Claude Desktop configuration:
 Run the server directly:
 
 ```bash
-npx @uh-joan/pubmed-mcp-server
+npx @openpharma-org/pubmed-mcp
 ```
 
 ## API Reference
@@ -196,7 +196,7 @@ All methods return detailed article information including:
 ### Setup
 
 ```bash
-git clone https://github.com/uh-joan/pubmed-mcp-server.git
+git clone https://github.com/openpharma-org/pubmed-mcp.git
 cd pubmed-mcp-server
 npm install
 ```
@@ -238,9 +238,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- 🐛 [Report Issues](https://github.com/uh-joan/pubmed-mcp-server/issues)
-- 📖 [Documentation](https://github.com/uh-joan/pubmed-mcp-server)
-- 💬 [Discussions](https://github.com/uh-joan/pubmed-mcp-server/discussions)
+- 🐛 [Report Issues](https://github.com/openpharma-org/pubmed-mcp/issues)
+- 📖 [Documentation](https://github.com/openpharma-org/pubmed-mcp)
+- 💬 [Discussions](https://github.com/openpharma-org/pubmed-mcp/discussions)
 
 ---
 
