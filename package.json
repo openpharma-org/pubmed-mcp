@@ -1,0 +1,41 @@
+{
+  "name": "@openpharma-org/pubmed-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for PubMed biomedical literature search and retrieval. Provides access to over 35 million citations with search, metadata extraction, and PDF access capabilities.",
+  "main": "src/index.js",
+  "bin": {
+    "pubmed-mcp-server": "src/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "pubmed",
+    "biomedical",
+    "literature",
+    "research",
+    "medical",
+    "search",
+    "ncbi",
+    "model-context-protocol"
+  ],
+  "author": "OpenPharma Contributors",
+  "license": "MIT",
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openpharma-org/pubmed-mcp-server"
+  },
+  "homepage": "https://github.com/openpharma-org/pubmed-mcp-server",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.0",
+    "axios": "^1.10.0",
+    "xml2js": "^0.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
