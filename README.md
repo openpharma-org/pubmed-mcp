@@ -1,58 +1,29 @@
-# PubMed MCP Server
-
-[![npm version](https://badge.fury.io/js/%40uh-joan%2Fpubmed-mcp-server.svg)](https://badge.fury.io/js/%40uh-joan%2Fpubmed-mcp-server)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Unofficial PubMed MCP Server
 
 A Model Context Protocol (MCP) server that provides access to PubMed's vast database of over 35 million biomedical citations. This server enables AI assistants and applications to search, retrieve metadata, and access full-text research articles from the world's largest biomedical literature database.
 
 ## Features
 
-- 🔍 **Keyword Search**: Search PubMed with natural language queries and medical terms
-- 🎯 **Advanced Search**: Filter by author, journal, publication date, and more
-- 📊 **Rich Metadata**: Get comprehensive article information including abstracts, MeSH terms, and DOIs
-- 📄 **PDF Access**: Download full-text PDFs when available through PMC
-- ⚡ **Fast & Reliable**: Built on NCBI's official E-utilities API
-- 🔌 **MCP Compatible**: Works seamlessly with Claude Desktop and other MCP clients
-
-## Installation
-
-### From NPM
-
-```bash
-npm install -g @openpharma-org/pubmed-mcp
-```
-
-### From Source
-
-```bash
-git clone https://github.com/openpharma-org/pubmed-mcp.git
-cd pubmed-mcp-server
-npm install
-```
+- **Keyword Search**: Search PubMed with natural language queries and medical terms
+- **Advanced Search**: Filter by author, journal, publication date, and more
+- **Rich Metadata**: Get comprehensive article information including abstracts, MeSH terms, and DOIs
+- **PDF Access**: Download full-text PDFs when available through PMC
+- **Fast & Reliable**: Built on NCBI's official E-utilities API
+- **MCP Compatible**: Works seamlessly with Claude Desktop and other MCP clients
 
 ## Usage
 
 ### Claude Desktop Integration
-
-Add this server to your Claude Desktop configuration:
 
 ```json
 {
   "mcpServers": {
     "pubmed": {
       "command": "npx",
-      "args": ["@openpharma-org/pubmed-mcp"]
+      "args": ["-y","/path/to/pubmed-mcp-server/src/index.js"]
     }
   }
 }
-```
-
-### Direct Usage
-
-Run the server directly:
-
-```bash
-npx @openpharma-org/pubmed-mcp
 ```
 
 ## API Reference
@@ -185,63 +156,5 @@ All methods return detailed article information including:
   "start_date": "2020/01/01"
 }
 ```
-
-## Development
-
-### Requirements
-
-- Node.js ≥ 18.0.0
-- npm or yarn
-
-### Setup
-
-```bash
-git clone https://github.com/openpharma-org/pubmed-mcp.git
-cd pubmed-mcp-server
-npm install
-```
-
-### Running Locally
-
-```bash
-npm start
-```
-
-### Project Structure
-
-```
-pubmed-mcp-server/
-├── src/
-│   ├── index.js          # MCP server implementation
-│   └── pubmed-search.js  # PubMed API interaction
-├── package.json
-└── README.md
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Built on [NCBI E-utilities](https://www.ncbi.nlm.nih.gov/books/NBK25501/) API
-- Uses the [Model Context Protocol](https://modelcontextprotocol.io/) specification
-- Thanks to the PubMed team for maintaining this invaluable resource
-
-## Support
-
-- 🐛 [Report Issues](https://github.com/openpharma-org/pubmed-mcp/issues)
-- 📖 [Documentation](https://github.com/openpharma-org/pubmed-mcp)
-- 💬 [Discussions](https://github.com/openpharma-org/pubmed-mcp/discussions)
-
----
 
 **Note**: This is an unofficial tool. Please respect PubMed's usage guidelines and rate limits when using this server. 
