@@ -19,8 +19,8 @@ A Model Context Protocol (MCP) server that provides access to PubMed's vast data
 {
   "mcpServers": {
     "pubmed": {
-      "command": "npx",
-      "args": ["-y","/path/to/pubmed-mcp-server/src/index.js"]
+      "command": "node",
+      "args": ["/path/to/pubmed-mcp-server/build/index.js"]
     }
   }
 }
