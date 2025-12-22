@@ -13,8 +13,6 @@ A Model Context Protocol (MCP) server that provides access to PubMed's vast data
 
 ## Usage
 
-### Claude Desktop Integration
-
 ```json
 {
   "mcpServers": {
